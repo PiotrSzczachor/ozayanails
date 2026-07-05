@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ═══ SEO: podmień https://ozayanails.pl na swoją prawdziwą domenę (3 miejsca w tym pliku + sitemap.xml + robots.txt) ═══ -->
+  <title>OZAYA Nails Kraków — stylizacja paznokci | by Oliwia Zając</title>
+  <meta name="description" content="OZAYA Nails by Oliwia Zając — stylizacja paznokci w Krakowie. Manicure klasyczny, przedłużanie i stylizacje żelowe w kameralnym gabinecie. Rezerwacja online przez Booksy.">
+  <link rel="canonical" href="https://ozayanails.pl/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F6F1E7">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="OZAYA Nails by Oliwia Zając">
+  <meta property="og:title" content="OZAYA Nails Kraków — stylizacja paznokci">
+  <meta property="og:description" content="Manicure klasyczny, przedłużanie i stylizacje żelowe w kameralnym gabinecie w Krakowie. Rezerwacja online przez Booksy.">
+  <meta property="og:url" content="https://ozayanails.pl/">
+  <meta property="og:image" content="https://ozayanails.pl/images/hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Dane strukturalne dla Google (wizytówka lokalnego biznesu) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NailSalon",
+    "name": "OZAYA Nails by Oliwia Zając",
+    "alternateName": "OZAYA Nails",
+    "url": "https://ozayanails.pl/",
+    "image": "https://ozayanails.pl/images/hero.webp",
+    "telephone": "+48530272750",
+    "priceRange": "60-200 zł",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Stefana Banacha 53",
+      "addressLocality": "Kraków",
+      "addressCountry": "PL"
+    },
+    "sameAs": ["https://www.instagram.com/ozaya.nails/"],
+    "founder": { "@type": "Person", "name": "Oliwia Zając", "jobTitle": "Stylistka paznokci" },
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manicure klasyczny" }, "priceCurrency": "PLN", "price": "80" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Przedłużanie paznokci" }, "priceCurrency": "PLN", "price": "160" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Uzupełnienie żelowe z korektą" }, "priceCurrency": "PLN", "price": "130" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #F6F1E7; --cream-2: #EFE6D6; --blush: #EBD6CF;
+      --ink: #2E2A23; --body: #40382F; --muted: #6E6355; --gold: #A5854B;
+      --card-border: #E2D5BE; --sans: 'Jost', sans-serif; --serif: 'Cormorant Garamond', serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--cream); color: var(--body); font-family: var(--sans); min-width: 320px; -webkit-font-smoothing: antialiased; }
+    ::selection { background: var(--blush); }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding-left: 6vw; padding-right: 6vw; }
+    .eyebrow { font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); }
+    .h2 { margin: 0; font-family: var(--serif); font-weight: 500; font-size: clamp(32px, 3.4vw, 44px); color: var(--ink); }
+
+    /* NAV */
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 26px; padding-bottom: 26px; }
+    .brand { text-decoration: none; color: var(--ink); display: flex; align-items: baseline; gap: 12px; }
+    .brand .oz { font-size: 19px; letter-spacing: 0.3em; }
+    .brand .nl { font-size: 10.5px; letter-spacing: 0.3em; color: var(--gold); }
+    .nav nav { display: flex; align-items: center; gap: 34px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .nav nav a { text-decoration: none; color: var(--muted); }
+    .nav nav a:hover { color: var(--ink); }
+    .nav .cta { color: var(--ink); border: 1px solid #C9B79C; padding: 10px 22px; border-radius: 999px; transition: background 0.2s; }
+    .nav .cta:hover { background: var(--blush); border-color: var(--blush); }
+
+    /* HERO */
+    .hero { padding-top: 48px; padding-bottom: 88px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+    .hero-copy { display: flex; flex-direction: column; gap: 28px; }
+    h1 { margin: 0; display: flex; flex-direction: column; gap: 20px; }
+    h1 .ozaya { font-weight: 300; font-size: clamp(50px, 6.2vw, 84px); letter-spacing: 0.22em; margin-right: -0.22em; line-height: 1; color: var(--ink); }
+    h1 .nails { display: flex; align-items: center; gap: 14px; font-size: clamp(14px, 1.3vw, 17px); letter-spacing: 0.4em; color: var(--gold); font-weight: 400; }
+    h1 .nails .d { font-size: 9px; }
+    h1 .by { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(22px, 2.2vw, 30px); color: var(--muted); }
+    .lead { margin: 0; max-width: 46ch; font-size: 17px; line-height: 1.7; font-weight: 300; color: var(--muted); }
+    .btn-row { display: flex; align-items: center; gap: 18px; margin-top: 8px; flex-wrap: wrap; }
+    .btn { text-decoration: none; background: var(--ink); color: var(--cream); padding: 15px 34px; border-radius: 999px; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; transition: background 0.2s; }
+    .btn:hover { background: #574B3D; }
+    .link { text-decoration: none; color: var(--muted); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; border-bottom: 1px solid #C9B79C; padding-bottom: 3px; }
+    .link:hover { color: var(--ink); }
+    .hero-photo { position: relative; }
+    .hero-photo::before { content: ""; position: absolute; inset: 24px -24px -24px 24px; background: var(--blush); border-radius: 200px 200px 16px 16px; }
+    .hero-photo img { position: relative; width: 100%; height: 520px; object-fit: cover; border-radius: 200px 200px 16px 16px; }
+
+    /* O MNIE */
+    .about { background: var(--cream-2); }
+    .about .wrap { padding-top: 96px; padding-bottom: 96px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 64px; align-items: center; }
+    .about img { width: min(320px, 78vw); height: min(320px, 78vw); object-fit: cover; border-radius: 50%; margin: 0 auto; }
+    .about-copy { display: flex; flex-direction: column; gap: 22px; }
+    .about-copy p { margin: 0; font-size: 16px; line-height: 1.8; font-weight: 300; color: var(--muted); max-width: 58ch; }
+
+    /* CERTYFIKATY */
+    .certs { padding-top: 96px; }
+    .sec-head { text-align: center; display: flex; flex-direction: column; gap: 14px; margin-bottom: 48px; }
+    .cert-grid { max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 24px; }
+    .ph { height: 230px; border-radius: 12px; border: 1px dashed #C9B79C; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #A08B6F; background: repeating-linear-gradient(45deg, #F1EADC, #F1EADC 14px, #EDE4D3 14px, #EDE4D3 28px); }
+
+    /* CENNIK */
+    .pricing { padding-top: 96px; padding-bottom: 96px; }
+    .price-grid { max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 28px; }
+    .price-card { border-radius: 20px; padding: 38px clamp(20px, 4vw, 36px) 30px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+    .price-card.c1 { background: #FDFAF3; border: 1px solid var(--card-border); }
+    .price-card.c2 { background: #F6E3DD; border: 1px solid #E8CDC5; }
+    .price-card h3 { display: flex; align-items: center; gap: 14px; margin: 0 0 18px; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 24px; color: var(--ink); }
+    .price-card h3::after { content: ""; flex: 1; height: 1px; background: var(--card-border); }
+    .price-card.c2 h3::after { background: #E8CDC5; }
+    .price-card ul { list-style: none; margin: 0; padding: 0; }
+    .price-card li { display: flex; flex-direction: column; gap: 10px; padding: 14px 0; border-bottom: 1px solid #EDE3D0; }
+    .price-card.c2 li { border-bottom-color: #EFD9D2; }
+    .row { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+    .row .price { font-family: var(--serif); font-size: 21px; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .variants { display: flex; gap: 6px; }
+    .variants span { flex: 1; display: inline-flex; align-items: baseline; justify-content: center; gap: 5px; background: var(--cream); border: 1px solid var(--card-border); border-radius: 999px; padding: 6px 4px; font-size: clamp(11px, 3vw, 12.5px); font-weight: 300; color: var(--muted); white-space: nowrap; min-width: 0; }
+    .variants b { font-weight: 500; color: var(--ink); }
+    .note { text-align: center; margin: 36px 0 0; font-size: 13.5px; font-weight: 300; color: var(--gold); }
+
+    /* PORTFOLIO */
+    .portfolio { background: var(--blush); }
+    .portfolio .wrap { padding-top: 96px; padding-bottom: 96px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .gallery .ph, .gallery img { height: 280px; border-radius: 14px; width: 100%; object-fit: cover; }
+
+    /* BOOKING */
+    .booking { padding-top: 110px; padding-bottom: 110px; text-align: center; }
+    .booking .inner { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+    .booking h2 { max-width: 22ch; font-size: clamp(34px, 3.8vw, 50px); line-height: 1.15; }
+    .booking p { margin: 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: var(--muted); max-width: 48ch; }
+    .booking .alt { font-size: 13px; font-weight: 300; color: var(--gold); }
+
+    /* KONTAKT */
+    .contact { background: var(--cream-2); }
+    .contact .wrap { padding-top: 96px; padding-bottom: 96px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: center; }
+    .contact-list { display: flex; flex-direction: column; gap: 18px; font-size: 16px; font-weight: 300; color: #574B3D; font-style: normal; }
+    .contact-list > div { display: flex; flex-direction: column; gap: 3px; }
+    .contact-list .lbl { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+    .contact-list a { color: inherit; text-decoration: none; }
+    .map { height: 380px; border-radius: 16px; overflow: hidden; background: #E7DCC9; }
+    .map iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    /* FOOTER */
+    footer { background: var(--ink); color: #CBBFAE; }
+    footer .wrap { padding-top: 34px; padding-bottom: 34px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+    .f-brand { display: flex; flex-direction: column; align-items: center; gap: 7px; }
+    .f-brand .oz { font-size: 17px; letter-spacing: 0.32em; margin-right: -0.32em; color: var(--cream); }
+    .f-brand .nl { font-size: 10px; letter-spacing: 0.32em; margin-right: -0.32em; color: #C7A468; }
+    .f-brand .by { font-family: var(--serif); font-style: italic; font-size: 16px; }
+    footer .small { font-size: 13px; font-weight: 300; letter-spacing: 0.08em; }
+    footer .legal { font-size: 12px; font-weight: 300; letter-spacing: 0.08em; color: #8F8271; }
+
+    @media (max-width: 760px) {
+      .nav nav a:not(.cta) { display: none; }
+      .hero, .about .wrap, .contact .wrap { grid-template-columns: 1fr; }
+      .hero { padding-top: 16px; }
+      .about .wrap, .contact .wrap { gap: 40px; }
+      .gallery { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; padding-bottom: 12px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+      .gallery::-webkit-scrollbar { display: none; }
+      .gallery > * { flex: 0 0 78%; scroll-snap-align: center; }
+    }
+
+    /* ── Minimalne animacje ── */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+    .hero-copy > * { animation: fadeUp 0.7s ease both; }
+    .hero-copy > *:nth-child(2) { animation-delay: 0.1s; }
+    .hero-copy > *:nth-child(3) { animation-delay: 0.2s; }
+    .hero-copy > *:nth-child(4) { animation-delay: 0.3s; }
+    .hero-photo { animation: fadeUp 0.8s ease 0.2s both; }
+    html.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    html.js .reveal.in { opacity: 1; transform: none; }
+    .btn, .nav .cta { transition: background 0.2s, transform 0.2s; }
+    .btn:hover, .nav .cta:hover { transform: translateY(-2px); }
+    .gallery .ph, .gallery img, .cert-grid .ph, .cert-grid img { transition: transform 0.3s ease; }
+    .gallery .ph:hover, .gallery img:hover, .cert-grid .ph:hover, .cert-grid img:hover { transform: translateY(-4px); }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-copy > *, .hero-photo { animation: none; }
+      html.js .reveal { opacity: 1; transform: none; transition: none; }
+      .btn:hover, .nav .cta:hover, .gallery .ph:hover, .gallery img:hover, .cert-grid .ph:hover, .cert-grid img:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="wrap nav">
+  <a href="#top" class="brand" aria-label="OZAYA Nails — strona główna">
+    <span class="oz">OZAYA</span><span class="nl">NAILS</span>
+  </a>
+  <nav aria-label="Menu główne">
+    <a href="#o-mnie">O mnie</a>
+    <a href="#cennik">Cennik</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#kontakt">Kontakt</a>
+    <a class="cta" href="https://booksy.com" target="_blank" rel="noopener">Umów wizytę</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="top" class="wrap hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Stylizacje paznokci · Kraków</p>
+      <h1>
+        <span class="ozaya">OZAYA</span>
+        <span class="nails" aria-label="Nails"><span class="d" aria-hidden="true">◆</span><span>NAILS</span><span class="d" aria-hidden="true">◆</span></span>
+        <span class="by">by Oliwia Zając</span>
+      </h1>
+      <p class="lead">Piękne paznokcie, dopracowane w każdym detalu. Manicure klasyczny, przedłużanie i stylizacje żelowe — w kameralnej atmosferze, z dbałością o zdrowie Twoich paznokci.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://booksy.com" target="_blank" rel="noopener">Zarezerwuj przez Booksy</a>
+        <a class="link" href="#cennik">Zobacz cennik</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/hero.webp" alt="Stylizacja paznokci OZAYA Nails — dłonie z gotowym manicure" width="580" height="520" fetchpriority="high">
+    </div>
+  </section>
+
+  <!-- O MNIE -->
+  <section id="o-mnie" class="about">
+    <div class="wrap">
+      <img src="images/about.webp" alt="Oliwia Zając — stylistka paznokci, OZAYA Nails Kraków" width="320" height="320" loading="lazy" class="reveal">
+      <div class="about-copy reveal">
+        <p class="eyebrow">O mnie</p>
+        <h2 class="h2">Cześć, jestem Oliwia</h2>
+        <p>Stylizacją paznokci zajmuję się od kilku lat i wciąż uwielbiam moment, w którym klientka pierwszy raz patrzy na gotowe dłonie. Pracuję na sprawdzonych produktach, dbam o precyzję i higienę, a każdą stylizację dopasowuję do kształtu dłoni i codziennego stylu życia.</p>
+        <p>Znajdziesz mnie w Krakowie a każda wizyta to chwila spokoju i relaksu tylko dla Ciebie.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTYFIKATY -->
+  <section id="certyfikaty" class="wrap certs">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Kwalifikacje</p>
+      <h2 class="h2">Certyfikaty</h2>
+    </div>
+    <div class="cert-grid reveal">
+      <!-- Podmień na: <img src="images/certyfikat-1.webp" alt="Certyfikat — nazwa szkolenia" loading="lazy"> -->
+      <div class="ph">certyfikat 1</div>
+      <div class="ph">certyfikat 2</div>
+      <div class="ph">certyfikat 3</div>
+    </div>
+  </section>
+
+  <!-- CENNIK -->
+  <section id="cennik" class="wrap pricing">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Usługi</p>
+      <h2 class="h2">Cennik</h2>
+    </div>
+    <div class="price-grid">
+      <div class="price-card c1 reveal">
+        <h3>Stylizacja</h3>
+        <ul>
+          <li>
+            <div class="row"><span>Manicure klasyczny</span><span class="price">80 zł</span></div>
+          </li>
+          <li>
+            <div class="row"><span>Przedłużanie paznokci</span><span class="price">od 160 zł</span></div>
+            <div class="variants"><span>Krótkie <b>160 zł</b></span><span>Średnie <b>180 zł</b></span><span>Długie <b>200 zł</b></span></div>
+          </li>
+          <li>
+            <div class="row"><span>Uzupełnienie żelowe z korektą</span><span class="price">od 130 zł</span></div>
+            <div class="variants"><span>Krótkie <b>130 zł</b></span><span>Średnie <b>150 zł</b></span><span>Długie <b>170 zł</b></span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="price-card c2 reveal">
+        <h3>Usuwanie i naprawa</h3>
+        <ul>
+          <li><div class="row"><span>Usunięcie hybrydy + manicure klasyczny</span><span class="price">100 zł</span></div></li>
+          <li><div class="row"><span>Usunięcie żelu + manicure klasyczny</span><span class="price">120 zł</span></div></li>
+          <li><div class="row"><span>Usunięcie stylizacji bez dodatkowych usług</span><span class="price">60 zł</span></div></li>
+          <li><div class="row"><span>Naprawa paznokcia</span><span class="price">20 zł</span></div></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Ceny orientacyjne — ostateczna wycena zależy od długości i stanu paznokci.</p>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Portfolio</p>
+        <h2 class="h2">Moje prace</h2>
+      </div>
+      <div class="gallery reveal">
+        <!-- Podmień na: <img src="images/praca-1.webp" alt="Manicure hybrydowy nude — OZAYA Nails Kraków" loading="lazy">
+             Opisowe teksty alt (kolor, technika, miasto) bardzo pomagają w SEO i Google Grafika. -->
+        <div class="ph">praca 1</div>
+        <div class="ph">praca 2</div>
+        <div class="ph">praca 3</div>
+        <div class="ph">praca 4</div>
+        <div class="ph">praca 5</div>
+        <div class="ph">praca 6</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REZERWACJA -->
+  <section id="rezerwacja" class="wrap booking">
+    <div class="inner reveal">
+      <h2 class="h2">Zarezerwuj swój termin online</h2>
+      <p>Wybierz usługę i dogodny termin w kalendarzu Booksy — potwierdzenie otrzymasz od razu.</p>
+      <a class="btn" href="https://booksy.com" target="_blank" rel="noopener">Otwórz Booksy</a>
+      <span class="alt">lub napisz do mnie na Instagramie</span>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="contact">
+    <div class="wrap">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2 class="h2">Znajdziesz mnie tutaj</h2>
+        <address class="contact-list">
+          <div><span class="lbl">Adres</span><span>ul. Stefana Banacha 53, Kraków</span></div>
+          <div><span class="lbl">Telefon</span><a href="tel:+48530272750">+48 530 272 750</a></div>
+          <div><span class="lbl">Instagram</span><a href="https://www.instagram.com/ozaya.nails/" target="_blank" rel="noopener">@ozaya.nails</a></div>
+        </address>
+      </div>
+      <div class="map reveal">
+        <iframe src="https://www.google.com/maps?q=Stefana+Banacha+53,+Krak%C3%B3w&output=embed" title="Mapa — ul. Stefana Banacha 53, Kraków" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">
+      <span class="oz">OZAYA</span>
+      <span class="nl">◆&nbsp;&nbsp;NAILS&nbsp;&nbsp;◆</span>
+      <span class="by">by Oliwia Zając</span>
+    </div>
+    <span class="small">Kraków © 2026</span>
+    <span class="legal">© 2026 Piotr Szcząchor™ · Wszelkie prawa zastrzeżone</span>
+  </div>
+</footer>
+
+<script>
+  // Delikatne pojawianie sekcji przy przewijaniu. Bez JS strona wygląda
+  // normalnie (klasa .js nigdy nie zostaje dodana) — zero wpływu na SEO.
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+    document.documentElement.classList.add('js');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
