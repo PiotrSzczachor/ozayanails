@@ -3,16 +3,60 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ozayanails.pl/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://ozayanails.pl/images/hero.webp</image:loc>
+      <image:loc>https://ozayanails.pl/images/hero-2.webp</image:loc>
       <image:title>OZAYA Nails by Oliwia Zając — stylizacja paznokci w Krakowie</image:title>
     </image:image>
     <image:image>
       <image:loc>https://ozayanails.pl/images/about.webp</image:loc>
       <image:title>Oliwia Zając — stylistka paznokci, OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-1.webp</image:loc>
+      <image:title>French konstrukcyjny z niebieskim brokatem na migdałowych paznokciach — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-2.webp</image:loc>
+      <image:title>French konstrukcyjny z turkusowym brokatem — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-3.webp</image:loc>
+      <image:title>Niebieski brokatowy french konstrukcyjny na przedłużanych paznokciach — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-4.webp</image:loc>
+      <image:title>French konstrukcyjny z turkusowym brokatem ombre — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-5.webp</image:loc>
+      <image:title>Różowy french z suszonymi kwiatami na kwadratowych paznokciach — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-6.webp</image:loc>
+      <image:title>Manicure french w odcieniach różu z kwiatowym zdobieniem — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-7.webp</image:loc>
+      <image:title>Klasyczny czerwony manicure hybrydowy na krótkich paznokciach — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-8.webp</image:loc>
+      <image:title>Czerwone paznokcie hybrydowe z białym akcentem — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/portfolio/praca-9.webp</image:loc>
+      <image:title>Pastelowy różowo-żółty french na przedłużanych paznokciach żelowych — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/certyfikat-1.webp</image:loc>
+      <image:title>Certyfikat Bezpiecznego Salonu Enbio — OZAYA Nails Kraków</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ozayanails.pl/images/certyfikat-2.webp</image:loc>
+      <image:title>Certyfikat Indigo Basic Mani — Oliwia Zając, OZAYA Nails Kraków</image:title>
     </image:image>
   </url>
 </urlset>

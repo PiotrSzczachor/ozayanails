@@ -6,7 +6,7 @@
 
   <!-- ═══ SEO: podmień https://ozayanails.pl na swoją prawdziwą domenę, gdyby kiedyś się zmieniła (ten plik + sitemap.xml + robots.txt) ═══ -->
   <title>OZAYA Nails Kraków — Paznokcie Oliwia Zając | Stylizacja paznokci</title>
-  <meta name="description" content="OZAYA Nails by Oliwia Zając — stylizacja paznokci w Krakowie. Manicure klasyczny, przedłużanie i uzupełnienia żelowe w kameralnym gabinecie. Paznokcie Oliwia Zając — rezerwacja online przez Booksy i Instagram @ozaya.nails.">
+  <meta name="description" content="OZAYA Nails by Oliwia Zając — stylizacja paznokci w Krakowie. Manicure, przedłużanie i french konstrukcyjny w kameralnym gabinecie. Rezerwacja przez Booksy.">
   <meta name="keywords" content="OZAYA, OZAYA Nails, ozayanails, paznokcie Ozaya, Ozaya paznokcie, paznokcie Oliwia Zając, Oliwia Zając paznokcie, Zając paznokcie, paznokcie Zając, paznokcie Kraków, stylizacja paznokci Kraków">
   <meta name="author" content="Oliwia Zając — OZAYA Nails">
   <link rel="canonical" href="https://ozayanails.pl/">
@@ -20,9 +20,10 @@
   <meta name="geo.position" content="50.0777;19.9077">
   <meta name="ICBM" content="50.0777, 19.9077">
 
-  <!-- Favicon (litera „O" w kolorystyce marki — bez dodatkowych plików) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232E2A23'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23A5854B' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232E2A23'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23A5854B' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E">
+  <!-- Favicon (litera „O" w kolorystyce marki) — pliki, nie data-URI, żeby Google pokazywał ikonę w wynikach -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website">
@@ -31,14 +32,14 @@
   <meta property="og:title" content="OZAYA Nails Kraków — Paznokcie Oliwia Zając">
   <meta property="og:description" content="Stylizacja paznokci w Krakowie — manicure klasyczny, przedłużanie i uzupełnienia żelowe. Paznokcie Oliwia Zając. Rezerwacja online przez Booksy.">
   <meta property="og:url" content="https://ozayanails.pl/">
-  <meta property="og:image" content="https://ozayanails.pl/images/hero.webp">
+  <meta property="og:image" content="https://ozayanails.pl/images/og-image.jpg">
   <meta property="og:image:alt" content="OZAYA Nails by Oliwia Zając — stylizacja paznokci w Krakowie">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="1080">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OZAYA Nails Kraków — Paznokcie Oliwia Zając">
   <meta name="twitter:description" content="Stylizacja paznokci w Krakowie — manicure, przedłużanie i uzupełnienia żelowe. Paznokcie Oliwia Zając. Rezerwacja przez Booksy.">
-  <meta name="twitter:image" content="https://ozayanails.pl/images/hero.webp">
+  <meta name="twitter:image" content="https://ozayanails.pl/images/og-image.jpg">
 
   <!-- Dane strukturalne dla Google (wizytówka lokalnego biznesu + osoba + strona) -->
   <script type="application/ld+json">
@@ -52,11 +53,10 @@
         "alternateName": ["OZAYA Nails", "ozayanails", "Ozaya", "Paznokcie Oliwia Zając"],
         "description": "Stylizacja paznokci w Krakowie — manicure klasyczny, przedłużanie i uzupełnienia żelowe. Gabinet Oliwii Zając (OZAYA Nails).",
         "url": "https://ozayanails.pl/",
-        "image": "https://ozayanails.pl/images/hero.webp",
-        "logo": "https://ozayanails.pl/images/hero.webp",
+        "image": "https://ozayanails.pl/images/og-image.jpg",
+        "logo": "https://ozayanails.pl/images/apple-touch-icon.png",
         "telephone": "+48530272750",
         "currenciesAccepted": "PLN",
-        "priceRange": "60–200 zł",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "ul. Stefana Banacha 53",
@@ -75,9 +75,9 @@
           "@type": "OfferCatalog",
           "name": "Cennik — stylizacja paznokci OZAYA Nails",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manicure klasyczny" }, "priceCurrency": "PLN", "price": "80" },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Przedłużanie paznokci" }, "priceCurrency": "PLN", "price": "160" },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Uzupełnienie żelowe z korektą" }, "priceCurrency": "PLN", "price": "130" }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manicure klasyczny" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Przedłużanie paznokci" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Uzupełnienie żelowe z korektą" } }
           ]
         }
       },
@@ -160,12 +160,29 @@
     .about img { width: min(320px, 78vw); height: min(320px, 78vw); object-fit: cover; border-radius: 50%; margin: 0 auto; }
     .about-copy { display: flex; flex-direction: column; gap: 22px; }
     .about-copy p { margin: 0; font-size: 16px; line-height: 1.8; font-weight: 300; color: var(--muted); max-width: 58ch; }
+    .ico { width: 0.8em; height: 0.8em; vertical-align: -0.05em; margin-left: 0.1em; }
+    p .ico { width: 1.05em; height: 1.05em; vertical-align: -0.15em; }
+    .ico .heart { fill: #FDFAF3; stroke: var(--gold); stroke-width: 1.6; stroke-linejoin: round; }
+    .ico .petal { fill: var(--blush); stroke: var(--gold); stroke-width: 0.5; }
+    .ico .core { fill: var(--gold); }
 
     /* CERTYFIKATY */
     .certs { padding-top: 96px; }
     .sec-head { text-align: center; display: flex; flex-direction: column; gap: 14px; margin-bottom: 48px; }
     .cert-grid { max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 24px; }
-    .ph { height: 230px; border-radius: 12px; border: 1px dashed #C9B79C; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #A08B6F; background: repeating-linear-gradient(45deg, #F1EADC, #F1EADC 14px, #EDE4D3 14px, #EDE4D3 28px); }
+    .cert-grid img { width: 100%; height: 340px; object-fit: contain; border-radius: 12px; border: 1px solid var(--card-border); background: #FDFAF3; padding: 12px; }
+    .cert-grid a, .gallery a { display: block; cursor: zoom-in; }
+
+    /* LIGHTBOX */
+    .lightbox { position: fixed; inset: 0; z-index: 100; display: none; align-items: center; justify-content: center; background: rgba(46, 42, 35, 0.92); padding: 24px 72px 72px; }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: min(1100px, 100%); max-height: 82vh; border-radius: 8px; background: #FDFAF3; }
+    .lightbox button { position: absolute; border: 1px solid rgba(246, 241, 231, 0.4); background: none; color: var(--cream); cursor: pointer; border-radius: 50%; width: 48px; height: 48px; font-size: 22px; line-height: 1; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+    .lightbox button:hover { background: rgba(246, 241, 231, 0.15); }
+    .lb-close { top: 20px; right: 20px; }
+    .lb-prev { left: 14px; top: 50%; transform: translateY(-50%); }
+    .lb-next { right: 14px; top: 50%; transform: translateY(-50%); }
+    .lb-caption { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); margin: 0; color: var(--cream-2); font-size: 14px; letter-spacing: 0.04em; text-align: center; max-width: min(640px, 80vw); line-height: 1.5; }
 
     /* CENNIK */
     .pricing { padding-top: 96px; padding-bottom: 96px; }
@@ -218,6 +235,8 @@
     .f-brand .by { font-family: var(--serif); font-style: italic; font-size: 16px; }
     footer .small { font-size: 13px; font-weight: 300; letter-spacing: 0.08em; }
     footer .legal { font-size: 12px; font-weight: 300; letter-spacing: 0.08em; color: #8F8271; }
+    footer .legal a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(143, 130, 113, 0.5); transition: color 0.2s, border-color 0.2s; }
+    footer .legal a:hover { color: #CBBFAE; border-color: #CBBFAE; }
 
     @media (max-width: 760px) {
       .nav nav a:not(.cta) { display: none; }
@@ -281,7 +300,7 @@
       </div>
     </div>
     <div class="hero-photo">
-      <img src="images/hero.webp" alt="Stylizacja paznokci OZAYA Nails — dłonie z gotowym manicure" width="580" height="520" fetchpriority="high">
+      <img src="images/hero-2.webp" alt="Stylizacja paznokci OZAYA Nails — dłonie z gotowym manicure" width="1024" height="1536" fetchpriority="high">
     </div>
   </section>
 
@@ -291,9 +310,9 @@
       <img src="images/about.webp" alt="Oliwia Zając — stylistka paznokci, OZAYA Nails Kraków" width="320" height="320" loading="lazy" class="reveal">
       <div class="about-copy reveal">
         <p class="eyebrow">O mnie</p>
-        <h2 class="h2">Cześć, jestem Oliwia Zając</h2>
-        <p>Jestem stylistką paznokci i twórczynią marki OZAYA Nails. Stylizacją paznokci zajmuję się od kilku lat i wciąż uwielbiam moment, w którym klientka pierwszy raz patrzy na gotowe dłonie. Pracuję na sprawdzonych produktach, dbam o precyzję i higienę, a każdą stylizację dopasowuję do kształtu dłoni i codziennego stylu życia.</p>
-        <p>Paznokcie od Oliwii Zając znajdziesz w Krakowie — a każda wizyta to chwila spokoju i relaksu tylko dla Ciebie.</p>
+        <h2 class="h2">Cześć, mam na imię Oliwia! <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="heart" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></h2>
+        <p>Miło mi, że tu jesteś. OZAYA NAILS to miejsce stworzone z pasji do stylizacji paznokci. Nieustannie rozwijam swoje umiejętności, uczestnicząc w szkoleniach i doskonaląc technikę, aby oferować stylizacje wykonane z dbałością o każdy detal.</p>
+        <p>Zależy mi na tym, aby każda wizyta przebiegała w przyjaznej atmosferze, a efekt końcowy spełniał Twoje oczekiwania. Zapraszam Cię do mojego świata pięknych paznokci! <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="heart" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g class="petal"><circle cx="12" cy="5" r="4.2"/><circle cx="18.66" cy="9.84" r="4.2"/><circle cx="16.11" cy="17.66" r="4.2"/><circle cx="7.89" cy="17.66" r="4.2"/><circle cx="5.34" cy="9.84" r="4.2"/></g><circle class="core" cx="12" cy="12" r="3"/></svg></p>
       </div>
     </div>
   </section>
@@ -305,10 +324,8 @@
       <h2 class="h2">Certyfikaty</h2>
     </div>
     <div class="cert-grid reveal">
-      <!-- Podmień na: <img src="images/certyfikat-1.webp" alt="Certyfikat — nazwa szkolenia" loading="lazy"> -->
-      <div class="ph">certyfikat 1</div>
-      <div class="ph">certyfikat 2</div>
-      <div class="ph">certyfikat 3</div>
+      <a href="images/certyfikat-1.webp"><img src="images/certyfikat-1.webp" alt="Certyfikat Bezpiecznego Salonu Enbio — sterylizacja narzędzi autoklawem medycznym" width="1600" height="1133" loading="lazy"></a>
+      <a href="images/certyfikat-2.webp"><img src="images/certyfikat-2.webp" alt="Certyfikat Indigo — szkolenie Basic Mani, Oliwia Zając" width="1600" height="1154" loading="lazy"></a>
     </div>
   </section>
 
@@ -323,25 +340,25 @@
         <h3>Stylizacja</h3>
         <ul>
           <li>
-            <div class="row"><span>Manicure klasyczny</span><span class="price">80 zł</span></div>
+            <div class="row"><span>Manicure klasyczny</span><span class="price">-</span></div>
           </li>
           <li>
-            <div class="row"><span>Przedłużanie paznokci</span><span class="price">od 160 zł</span></div>
-            <div class="variants"><span>Krótkie <b>160 zł</b></span><span>Średnie <b>180 zł</b></span><span>Długie <b>200 zł</b></span></div>
+            <div class="row"><span>Przedłużanie paznokci</span><span class="price">-</span></div>
+            <div class="variants"><span>Krótkie <b>-</b></span><span>Średnie <b>-</b></span><span>Długie <b>-</b></span></div>
           </li>
           <li>
-            <div class="row"><span>Uzupełnienie żelowe z korektą</span><span class="price">od 130 zł</span></div>
-            <div class="variants"><span>Krótkie <b>130 zł</b></span><span>Średnie <b>150 zł</b></span><span>Długie <b>170 zł</b></span></div>
+            <div class="row"><span>Uzupełnienie żelowe z korektą</span><span class="price">-</span></div>
+            <div class="variants"><span>Krótkie <b>-</b></span><span>Średnie <b>-</b></span><span>Długie <b>-</b></span></div>
           </li>
         </ul>
       </div>
       <div class="price-card c2 reveal">
         <h3>Usuwanie i naprawa</h3>
         <ul>
-          <li><div class="row"><span>Usunięcie hybrydy + manicure klasyczny</span><span class="price">100 zł</span></div></li>
-          <li><div class="row"><span>Usunięcie żelu + manicure klasyczny</span><span class="price">120 zł</span></div></li>
-          <li><div class="row"><span>Usunięcie stylizacji bez dodatkowych usług</span><span class="price">60 zł</span></div></li>
-          <li><div class="row"><span>Naprawa paznokcia</span><span class="price">20 zł</span></div></li>
+          <li><div class="row"><span>Usunięcie hybrydy + manicure klasyczny</span><span class="price">-</span></div></li>
+          <li><div class="row"><span>Usunięcie żelu + manicure klasyczny</span><span class="price">-</span></div></li>
+          <li><div class="row"><span>Usunięcie stylizacji bez dodatkowych usług</span><span class="price">-</span></div></li>
+          <li><div class="row"><span>Naprawa paznokcia</span><span class="price">-</span></div></li>
         </ul>
       </div>
     </div>
@@ -356,14 +373,15 @@
         <h2 class="h2">Moje prace</h2>
       </div>
       <div class="gallery reveal">
-        <!-- Podmień na: <img src="images/praca-1.webp" alt="Manicure hybrydowy nude — OZAYA Nails Kraków" loading="lazy">
-             Opisowe teksty alt (kolor, technika, miasto) bardzo pomagają w SEO i Google Grafika. -->
-        <div class="ph">praca 1</div>
-        <div class="ph">praca 2</div>
-        <div class="ph">praca 3</div>
-        <div class="ph">praca 4</div>
-        <div class="ph">praca 5</div>
-        <div class="ph">praca 6</div>
+        <a href="images/portfolio/praca-1.webp"><img src="images/portfolio/praca-1.webp" alt="French konstrukcyjny z niebieskim brokatem na migdałowych paznokciach — OZAYA Nails Kraków" width="1400" height="1867" loading="lazy"></a>
+        <a href="images/portfolio/praca-2.webp"><img src="images/portfolio/praca-2.webp" alt="French konstrukcyjny z turkusowym brokatem — OZAYA Nails Kraków" width="1400" height="1867" loading="lazy"></a>
+        <a href="images/portfolio/praca-3.webp"><img src="images/portfolio/praca-3.webp" alt="Niebieski brokatowy french konstrukcyjny na przedłużanych paznokciach — OZAYA Nails Kraków" width="1400" height="1867" loading="lazy"></a>
+        <a href="images/portfolio/praca-4.webp"><img src="images/portfolio/praca-4.webp" alt="French konstrukcyjny z turkusowym brokatem ombre — OZAYA Nails Kraków" width="1320" height="2336" loading="lazy"></a>
+        <a href="images/portfolio/praca-5.webp"><img src="images/portfolio/praca-5.webp" alt="Różowy french z suszonymi kwiatami na kwadratowych paznokciach — OZAYA Nails Kraków" width="1086" height="1448" loading="lazy"></a>
+        <a href="images/portfolio/praca-6.webp"><img src="images/portfolio/praca-6.webp" alt="Manicure french w odcieniach różu z kwiatowym zdobieniem — OZAYA Nails Kraków" width="1086" height="1448" loading="lazy"></a>
+        <a href="images/portfolio/praca-7.webp"><img src="images/portfolio/praca-7.webp" alt="Klasyczny czerwony manicure hybrydowy na krótkich paznokciach — OZAYA Nails Kraków" width="1400" height="2489" loading="lazy"></a>
+        <a href="images/portfolio/praca-8.webp"><img src="images/portfolio/praca-8.webp" alt="Czerwone paznokcie hybrydowe z białym akcentem — OZAYA Nails Kraków" width="1400" height="2489" loading="lazy"></a>
+        <a href="images/portfolio/praca-9.webp"><img src="images/portfolio/praca-9.webp" alt="Pastelowy różowo-żółty french na przedłużanych paznokciach żelowych — OZAYA Nails Kraków" width="1400" height="1867" loading="lazy"></a>
       </div>
     </div>
   </section>
@@ -406,9 +424,17 @@
       <span class="by">by Oliwia Zając</span>
     </div>
     <span class="small">Kraków © 2026</span>
-    <span class="legal">© 2026 Piotr Szcząchor™ · Wszelkie prawa zastrzeżone</span>
+    <span class="legal">© 2026 <a href="https://www.piotrszczachor.pl/" target="_blank" rel="noopener">Piotr Szcząchor™</a> · Wszelkie prawa zastrzeżone</span>
   </div>
 </footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button type="button" class="lb-close" aria-label="Zamknij podgląd">✕</button>
+  <button type="button" class="lb-prev" aria-label="Poprzedni certyfikat">‹</button>
+  <button type="button" class="lb-next" aria-label="Następny certyfikat">›</button>
+  <img src="" alt="">
+  <p class="lb-caption"></p>
+</div>
 
 <script>
   // Delikatne pojawianie sekcji przy przewijaniu. Bez JS strona wygląda
@@ -422,6 +448,43 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  })();
+
+  // Lightbox certyfikatów i portfolio. Bez JS linki otwierają obraz bezpośrednio.
+  (function () {
+    var lb = document.getElementById('lightbox');
+    if (!lb) return;
+    var img = lb.querySelector('img');
+    var caption = lb.querySelector('.lb-caption');
+    var activeLinks = [];
+    var current = 0;
+
+    function show(i) {
+      current = (i + activeLinks.length) % activeLinks.length;
+      var thumb = activeLinks[current].querySelector('img');
+      img.src = activeLinks[current].href;
+      img.alt = thumb.alt;
+      caption.textContent = thumb.alt;
+    }
+    function open(i) { show(i); lb.classList.add('open'); document.body.style.overflow = 'hidden'; lb.querySelector('.lb-close').focus(); }
+    function close() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+
+    ['.cert-grid', '.gallery'].forEach(function (sel) {
+      var links = Array.prototype.slice.call(document.querySelectorAll(sel + ' a'));
+      links.forEach(function (a, i) {
+        a.addEventListener('click', function (e) { e.preventDefault(); activeLinks = links; open(i); });
+      });
+    });
+    lb.querySelector('.lb-close').addEventListener('click', close);
+    lb.querySelector('.lb-prev').addEventListener('click', function () { show(current - 1); });
+    lb.querySelector('.lb-next').addEventListener('click', function () { show(current + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(current - 1);
+      else if (e.key === 'ArrowRight') show(current + 1);
+    });
   })();
 </script>
 
