@@ -72,15 +72,23 @@
           "addressCountry": "PL"
         },
         "geo": { "@type": "GeoCoordinates", "latitude": 50.0913, "longitude": 19.9596 },
-        "openingHoursSpecification": [{
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "09:00",
-          "closes": "20:00"
-        }],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
         "hasMap": "https://www.google.com/maps?q=Aleja+29+Listopada+130,+Krak%C3%B3w",
         "areaServed": { "@type": "City", "name": "Kraków" },
-        "sameAs": ["https://www.instagram.com/ozaya.nails/"],
+        "sameAs": ["https://www.instagram.com/ozaya.nails/", "https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow"],
         "founder": { "@id": "https://ozayanails.pl/#oliwia" },
         "employee": { "@id": "https://ozayanails.pl/#oliwia" },
         "hasOfferCatalog": {
@@ -326,7 +334,7 @@
     <a href="#cennik">Cennik</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#kontakt">Kontakt</a>
-    <a class="cta" href="https://booksy.com" target="_blank" rel="noopener">Umów wizytę</a>
+    <a class="cta" href="https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow" target="_blank" rel="noopener">Umów wizytę</a>
   </nav>
 </header>
 
@@ -342,7 +350,7 @@
       </h1>
       <p class="lead">Piękne paznokcie, dopracowane w każdym detalu. Manicure klasyczny, przedłużanie i stylizacje żelowe — w kameralnej atmosferze, z dbałością o zdrowie Twoich paznokci.</p>
       <div class="btn-row">
-        <a class="btn" href="https://booksy.com" target="_blank" rel="noopener">Zarezerwuj przez Booksy</a>
+        <a class="btn" href="https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow" target="_blank" rel="noopener">Zarezerwuj przez Booksy</a>
         <a class="link" href="#cennik">Zobacz cennik</a>
       </div>
     </div>
@@ -498,7 +506,7 @@
     <div class="inner reveal">
       <h2 class="h2">Zarezerwuj swój termin online</h2>
       <p>Wybierz usługę i dogodny termin w kalendarzu Booksy — potwierdzenie otrzymasz od razu.</p>
-      <a class="btn" href="https://booksy.com" target="_blank" rel="noopener">Otwórz Booksy</a>
+      <a class="btn" href="https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow" target="_blank" rel="noopener">Otwórz Booksy</a>
       <span class="alt">lub napisz do mnie na Instagramie</span>
     </div>
   </section>
@@ -511,7 +519,7 @@
         <h2 class="h2">Znajdziesz mnie tutaj</h2>
         <address class="contact-list">
           <div><span class="lbl">Adres</span><span>Aleja 29 Listopada 130, pokój 320A, Kraków</span></div>
-          <div><span class="lbl">Godziny</span><span>Pon.–niedz. 9:00–20:00, wizyty po umówieniu</span></div>
+          <div><span class="lbl">Godziny</span><span>Pon.–pt. 9:00–20:00<br>Sob.–niedz. 9:00–17:00<br>wizyty po umówieniu</span></div>
           <div><span class="lbl">Telefon</span><a href="tel:+48530272750">+48 530 272 750</a></div>
           <div><span class="lbl">Instagram</span><a href="https://www.instagram.com/ozaya.nails/" target="_blank" rel="noopener">@ozaya.nails</a></div>
         </address>
