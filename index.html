@@ -91,6 +91,13 @@
         "sameAs": ["https://www.instagram.com/ozaya.nails/", "https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow"],
         "founder": { "@id": "https://ozayanails.pl/#oliwia" },
         "employee": { "@id": "https://ozayanails.pl/#oliwia" },
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certyfikat Bezpiecznego Salonu Enbio",
+          "credentialCategory": "certificate",
+          "description": "Narzędzia sterylizowane w autoklawie medycznym Enbio.",
+          "recognizedBy": { "@type": "Organization", "name": "Enbio" }
+        },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Cennik — stylizacja paznokci OZAYA Nails",
@@ -111,6 +118,20 @@
         "givenName": "Oliwia",
         "familyName": "Zając",
         "jobTitle": "Stylistka paznokci",
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Szkolenie Basic Mani",
+            "credentialCategory": "certificate",
+            "recognizedBy": { "@type": "Organization", "name": "Indigo" }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Szkolenie Baza żel: migdał vs kwadrat",
+            "credentialCategory": "certificate",
+            "recognizedBy": { "@type": "Organization", "name": "Art School" }
+          }
+        ],
         "worksFor": { "@id": "https://ozayanails.pl/#business" },
         "url": "https://ozayanails.pl/",
         "image": "https://ozayanails.pl/images/about.webp",
@@ -193,7 +214,8 @@
     .certs { padding-top: 96px; }
     .sec-head { text-align: center; display: flex; flex-direction: column; gap: 14px; margin-bottom: 48px; }
     .cert-grid { max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 24px; }
-    .cert-grid img { width: 100%; height: 340px; object-fit: contain; border-radius: 12px; border: 1px solid var(--card-border); background: #FDFAF3; padding: 12px; }
+    /* height:auto jest konieczne — bez niego atrybut height="" z HTML wygrywa z aspect-ratio */
+    .cert-grid img { width: 100%; height: auto; aspect-ratio: 7 / 5; object-fit: contain; border-radius: 12px; border: 1px solid var(--card-border); background: #FDFAF3; padding: 12px; }
     .cert-grid a, .pf-track a { display: block; cursor: zoom-in; }
 
     /* LIGHTBOX */
@@ -381,6 +403,7 @@
     <div class="cert-grid reveal">
       <a href="images/certyfikat-1.webp"><img src="images/certyfikat-1.webp" alt="Certyfikat Bezpiecznego Salonu Enbio — sterylizacja narzędzi autoklawem medycznym" width="1600" height="1133" loading="lazy"></a>
       <a href="images/certyfikat-2.webp"><img src="images/certyfikat-2.webp" alt="Certyfikat Indigo — szkolenie Basic Mani, Oliwia Zając" width="1600" height="1154" loading="lazy"></a>
+      <a href="images/certyfikat-3.webp"><img src="images/certyfikat-3.webp" alt="Certyfikat Art School — szkolenie Baza żel: migdał vs kwadrat, Oliwia Zając" width="1600" height="1147" loading="lazy"></a>
     </div>
   </section>
 
