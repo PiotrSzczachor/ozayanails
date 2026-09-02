@@ -88,7 +88,28 @@
         ],
         "hasMap": "https://www.google.com/maps?q=Aleja+29+Listopada+130,+Krak%C3%B3w",
         "areaServed": { "@type": "City", "name": "Kraków" },
-        "sameAs": ["https://www.instagram.com/ozaya.nails/", "https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow"],
+        "acceptsReservations": "True",
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "name": "Rezerwacja wizyty przez Booksy",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://ozayanails.booksy.com/h/",
+            "inLanguage": "pl-PL",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/IOSPlatform",
+              "http://schema.org/AndroidPlatform"
+            ]
+          },
+          "result": { "@type": "Reservation", "name": "Wizyta w OZAYA Nails" }
+        },
+        "sameAs": [
+          "https://www.instagram.com/ozaya.nails/",
+          "https://www.facebook.com/profile.php?id=61594184391487",
+          "https://www.tiktok.com/@ozaya.nails",
+          "https://ozayanails.booksy.com/h/"
+        ],
         "founder": { "@id": "https://ozayanails.pl/#oliwia" },
         "employee": { "@id": "https://ozayanails.pl/#oliwia" },
         "hasCredential": {
@@ -135,7 +156,7 @@
         "worksFor": { "@id": "https://ozayanails.pl/#business" },
         "url": "https://ozayanails.pl/",
         "image": "https://ozayanails.pl/images/about.webp",
-        "sameAs": ["https://www.instagram.com/ozaya.nails/"]
+        "sameAs": ["https://www.instagram.com/ozaya.nails/", "https://www.tiktok.com/@ozaya.nails", "https://www.facebook.com/profile.php?id=61594184391487"]
       },
       {
         "@type": "WebSite",
@@ -153,6 +174,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Zdjęcie z hero to element LCP — pobieramy je równolegle z CSS, nie po nim -->
+  <link rel="preload" as="image" href="images/hero-2.webp" fetchpriority="high">
 
   <style>
     :root {
@@ -259,11 +283,13 @@
     .pf-marquee.auto .pf-track { will-change: transform; }
     .pf-track > a { flex: 0 0 auto; width: clamp(168px, 21vw, 236px); scroll-snap-align: center; }
     .pf-track img { display: block; width: 100%; height: clamp(224px, 27vw, 314px); border-radius: 14px; object-fit: cover; }
-    .pf-cta { display: flex; justify-content: center; margin-top: 44px; }
+    .pf-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 44px; }
     /* jaśniejszy wariant pigułki — CTA do Booksy niżej ma zostać tym mocniejszym */
     .btn-ig { display: inline-flex; align-items: center; justify-content: center; text-align: center; gap: 11px; background: #FDFAF3; color: var(--ink); border: 1px solid var(--card-border); }
     .btn-ig:hover { background: #fff; border-color: var(--gold); }
     .btn-ig svg { width: 17px; height: 17px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+    /* logotypy TikToka i Facebooka są znakami pełnymi — kontur by je zamazał */
+    .btn-ig svg.solid { fill: currentColor; stroke: none; }
 
     /* LOKAL */
     .lokal { background: var(--cream-2); }
@@ -303,6 +329,12 @@
     .f-brand .oz { font-size: 17px; letter-spacing: 0.32em; margin-right: -0.32em; color: var(--cream); }
     .f-brand .nl { font-size: 10px; letter-spacing: 0.32em; margin-right: -0.32em; color: #C7A468; }
     .f-brand .by { font-family: var(--serif); font-style: italic; font-size: 16px; }
+    .f-socials { display: flex; gap: 16px; margin: 12px 0 4px; }
+    .f-socials a { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; color: #CBBFAE; border: 1px solid rgba(203, 191, 174, 0.28); transition: color 0.2s, border-color 0.2s, transform 0.2s; }
+    .f-socials a:hover { color: var(--cream); border-color: #C7A468; transform: translateY(-2px); }
+    .f-socials svg { width: 17px; height: 17px; fill: currentColor; }
+    .f-socials svg.line { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+    @media (prefers-reduced-motion: reduce) { .f-socials a:hover { transform: none; } }
     footer .small { font-size: 13px; font-weight: 300; letter-spacing: 0.08em; }
     footer .legal { font-size: 12px; font-weight: 300; letter-spacing: 0.08em; color: #8F8271; }
     footer .legal a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(143, 130, 113, 0.5); transition: color 0.2s, border-color 0.2s; }
@@ -356,7 +388,7 @@
     <a href="#cennik">Cennik</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#kontakt">Kontakt</a>
-    <a class="cta" href="https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow" target="_blank" rel="noopener">Umów wizytę</a>
+    <a class="cta" href="https://ozayanails.booksy.com/h/" target="_blank" rel="noopener">Umów wizytę</a>
   </nav>
 </header>
 
@@ -372,7 +404,7 @@
       </h1>
       <p class="lead">Piękne paznokcie, dopracowane w każdym detalu. Manicure klasyczny, przedłużanie i stylizacje żelowe — w kameralnej atmosferze, z dbałością o zdrowie Twoich paznokci.</p>
       <div class="btn-row">
-        <a class="btn" href="https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow" target="_blank" rel="noopener">Zarezerwuj przez Booksy</a>
+        <a class="btn" href="https://ozayanails.booksy.com/h/" target="_blank" rel="noopener">Zarezerwuj przez Booksy</a>
         <a class="link" href="#cennik">Zobacz cennik</a>
       </div>
     </div>
@@ -499,6 +531,10 @@
           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none"></circle></svg>
           Zobacz więcej na Instagramie
         </a>
+        <a class="btn btn-ig" href="https://www.tiktok.com/@ozaya.nails" target="_blank" rel="noopener">
+          <svg class="solid" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.79-2.47V9.77a5.95 5.95 0 1 0 4.9 5.85V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.28 4.28 0 0 1-3.26-1.48Z"/></svg>
+          Obejrzyj na TikToku
+        </a>
       </div>
     </div>
   </section>
@@ -529,7 +565,7 @@
     <div class="inner reveal">
       <h2 class="h2">Zarezerwuj swój termin online</h2>
       <p>Wybierz usługę i dogodny termin w kalendarzu Booksy — potwierdzenie otrzymasz od razu.</p>
-      <a class="btn" href="https://booksy.com/pl-pl/357590_ozaya-nails-by-oliwia-zajac_paznokcie_8820_krakow" target="_blank" rel="noopener">Otwórz Booksy</a>
+      <a class="btn" href="https://ozayanails.booksy.com/h/" target="_blank" rel="noopener">Otwórz Booksy</a>
       <span class="alt">lub napisz do mnie na Instagramie</span>
     </div>
   </section>
@@ -545,6 +581,8 @@
           <div><span class="lbl">Godziny</span><span>Pon.–pt. 9:00–20:00<br>Sob.–niedz. 9:00–17:00<br>wizyty po umówieniu</span></div>
           <div><span class="lbl">Telefon</span><a href="tel:+48530272750">+48 530 272 750</a></div>
           <div><span class="lbl">Instagram</span><a href="https://www.instagram.com/ozaya.nails/" target="_blank" rel="noopener">@ozaya.nails</a></div>
+          <div><span class="lbl">TikTok</span><a href="https://www.tiktok.com/@ozaya.nails" target="_blank" rel="noopener">@ozaya.nails</a></div>
+          <div><span class="lbl">Facebook</span><a href="https://www.facebook.com/profile.php?id=61594184391487" target="_blank" rel="noopener">OZAYA Nails by Oliwia Zając</a></div>
         </address>
       </div>
       <div class="map reveal">
@@ -561,6 +599,17 @@
       <span class="oz">OZAYA</span>
       <span class="nl">◆&nbsp;&nbsp;NAILS&nbsp;&nbsp;◆</span>
       <span class="by">by Oliwia Zając</span>
+    </div>
+    <div class="f-socials">
+      <a href="https://www.instagram.com/ozaya.nails/" target="_blank" rel="noopener" aria-label="OZAYA Nails na Instagramie">
+        <svg class="line" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none"></circle></svg>
+      </a>
+      <a href="https://www.tiktok.com/@ozaya.nails" target="_blank" rel="noopener" aria-label="OZAYA Nails na TikToku">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.79-2.47V9.77a5.95 5.95 0 1 0 4.9 5.85V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.28 4.28 0 0 1-3.26-1.48Z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61594184391487" target="_blank" rel="noopener" aria-label="OZAYA Nails na Facebooku">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.96h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.1 24 12.07Z"/></svg>
+      </a>
     </div>
     <span class="small">Kraków © 2026</span>
     <span class="legal">© 2026 <a href="https://www.piotrszczachor.pl/" target="_blank" rel="noopener">Piotr Szcząchor™</a> · Wszelkie prawa zastrzeżone</span>
